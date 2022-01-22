@@ -39,4 +39,23 @@ public class rotate : MonoBehaviour
         }
         transform.Rotate(vector * Time.deltaTime * speed);
     }
+
+    public void ChangeRotation(string newDirection)
+    {
+        switch (newDirection)
+        {
+            case "left":
+                direction = Direction.left;
+                break;
+            case "right":
+                direction = Direction.right;
+                break;
+            case "up":
+                direction = Direction.up;
+                break;
+            case "down":
+                direction = Direction.down;
+                break;
+        }
+    }
 }
