@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
+  font-family: "Space Mono", monospace;
 }
 
 #unity-canvas {
@@ -11,4 +12,24 @@ body {
   height: 100%;
   position: absolute;
   z-index: -1;
+}
+
+#control-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: solid 1px red;
+  padding: 1rem;
+  align-items: center;
+  width: 10rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }

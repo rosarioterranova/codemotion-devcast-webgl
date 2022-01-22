@@ -4,15 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Codemotion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <canvas id="unity-canvas"></canvas>
-    <div>
-      <button id="rotate-up">Rotate Up</button>
-      <button id="rotate-down">Rotate Down</button>
-      <button id="rotate-left">Rotate Left</button>
-      <button id="rotate-right">Rotate Right</button>
+    <div id="control-panel">
+      <p><b>Control Pannel</b></p>
+      <div>
+        <p>Actual Speed: <span id="speed-indicator">50</span></p>
+        <button id="rotate-up">Rotate Up</button>
+        <button id="rotate-down">Rotate Down</button>
+        <button id="rotate-left">Rotate Left</button>
+        <button id="rotate-right">Rotate Right</button>
+        <button id="speed-up">Speed Up</button>
+        <button id="speed-down">Speed Down</button>
+      </div>
     </div>
     <script src="Build/Build.loader.js"></script>
     <script src="main.js"></script>

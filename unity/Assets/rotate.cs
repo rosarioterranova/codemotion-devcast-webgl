@@ -58,4 +58,9 @@ public class rotate : MonoBehaviour
                 break;
         }
     }
+
+    public void ChangeSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
 }
